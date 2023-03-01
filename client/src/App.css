@@ -3,3 +3,11 @@
   margin: 0;
   padding: 0;
 }   
+
+.leftSection{
+  width:30%;
+}
+
+.rightSection{
+  width:70%;
+}

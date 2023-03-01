@@ -1,0 +1,15 @@
+.Sidenav{
+    background-color: #000220;
+    width: 15%;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.showNav{
+    display: block;
+}
+
+.hideNav{
+    display: none;
+}
