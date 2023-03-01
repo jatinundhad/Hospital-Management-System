@@ -1,16 +1,15 @@
 import React from 'react'
-import styles from './CSS/loginForm.module.css'
+import styles from '../../CSS/LoginForm.module.css'
+import Input from '../UI/Input'
+import Button from '../UI/Button'
 function LoginForm() {
   return (
     <>
-    <div>
-        <label htmlFor='PatientName'>Name*</label>
-        <input type="text" id='PatientName' placeholder='i.e. Rahul'></input>
-        <label htmlFor='Contact'>Contact No*</label>
-        <input type="text" id='Contact' placeholder='i.e. 1234567890'></input>
-        <label htmlFor='Email'>Email ID*</label>
-        <input type="text" id='Email' placeholder='i.e. abc@domain.com'></input>
-        <input type="submit"></input>
+    <div className='container'>
+        <Input Fieldname="Patient Name" required={true}/>
+        <Input Fieldname="Contact" Type="number" placeholder='i.e. 1234567890' required={true}/>
+        <Input Fieldname="Email" placeholder='i.e. abc@domain.com' required={true}/>
+        <Button Type="submit">Submit</Button>
     </div>
     </>
   )
