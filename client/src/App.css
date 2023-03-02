@@ -1,13 +1,3 @@
 .App {
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}   
-
-.leftSection{
-  width:30%;
-}
-
-.rightSection{
-  width:70%;
+  font-family: Arial, Helvetica, sans-serif;
 }

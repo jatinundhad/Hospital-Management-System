@@ -1,3 +1,14 @@
-input{
-    display: block;
+.container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("../Assets/backImage.jpg");
+  background-size: cover;
+}
+
+.container section {
+  padding: 30px 10px 15px 10px;
+  margin: auto;
+  background-color: white;
+  box-shadow: 0 0 30px rgb(181, 179, 179);
 }

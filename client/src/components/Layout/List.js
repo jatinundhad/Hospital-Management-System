@@ -16,12 +16,12 @@ import { GiMedicines } from "react-icons/gi";
 import { ImLab } from "react-icons/im";
 import { CgNotes } from "react-icons/cg";
 import { Link } from "react-router-dom";
-import Logo from "../Assets/HMSLogo.png";
+import Logo from "../UI/Logo";
 
 export default function List() {
   return (
     <>
-      <img src={Logo} alt="HMSLogo.png" className={styles.logo} />
+      <Logo />
       <ul className={styles.Menus}>
         <li>
           <Link to="/" className={styles.changeDeco}>

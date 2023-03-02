@@ -1,14 +1,23 @@
-.inputLabel{
-    color: #434343;
-    font-weight: 600;
-    font-size: 14px;
-    margin:1px;
+.inputLabel {
+  color: #434343;
+  font-weight: 600;
+  font-size: 17px;
+  display: block;
+  margin: 8px;
 }
 
-.inputField{
-    width:  500px;
-    height: 25px;
-    border: 2   px solid grey;
-    border-radius: 10px;
-    margin: 3px;
+.inputField {
+  width: 500px;
+  height: 25px;
+  border: 1px solid rgb(168, 166, 166);
+  padding: 8px;
+  font-size: 17px;
+  border-radius: 5px;
+  margin: 3px;
+  display: block;
+  box-shadow: 0 0 5px rgb(225, 224, 224);
+}
+
+.inputLabel span {
+  color: red;
 }
