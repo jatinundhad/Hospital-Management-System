@@ -15,6 +15,7 @@ export default function Input(props) {
         id={props.Fieldname}
         placeholder={props.placeholder}
         required={props.required}
+        name={`${props.name?props.name:props.Fieldname}`}
       ></input>
     </div>
   );
@@ -25,6 +26,7 @@ Input.propTypes = {
   placeholder: PropTypes.string,
   required: PropTypes.bool,
   Type: PropTypes.string,
+  name: PropTypes.string
 };
 
 Input.defaultProps = {
