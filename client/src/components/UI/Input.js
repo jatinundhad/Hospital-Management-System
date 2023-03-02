@@ -15,6 +15,10 @@ export default function Input(props) {
         id={props.Fieldname}
         placeholder={props.placeholder}
         required={props.required}
+        onChange={props.onChange}
+        onBlur={props.onBlur}
+        name={props.name}
+        value={props.value}
       ></input>
     </div>
   );
@@ -25,10 +29,16 @@ Input.propTypes = {
   placeholder: PropTypes.string,
   required: PropTypes.bool,
   Type: PropTypes.string,
+  onChange: PropTypes.func,
+  onBlur: PropTypes.func,
+  name: PropTypes.string,
+  value: PropTypes.any,
 };
 
 Input.defaultProps = {
   Type: "text",
   placeholder: "",
   required: false,
+  onChange: () => {},
+  onBlur: () => {},
 };
