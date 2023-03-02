@@ -1,25 +1,28 @@
-import React,{useState} from 'react'
-import Sidenav from './Sidenav';
-import Navbar from './Navbar'; 
+import React, { useState } from "react";
+import Sidenav from "./Layout/Sidenav";
+import Navbar from "./Layout/Navbar";
+import styles from "./Home.module.css";
 
 function Home() {
-    const [toggle,setToggle] = useState(false);
+  const [toggle, setToggle] = useState(true);
 
-    function toggleSideBar() {
-      setToggle((prevToggle) => {
-        return !prevToggle;
-      })
-    }
+  function toggleSideBar() {
+    setToggle((prevToggle) => {
+      return !prevToggle;
+    });
+  }
   return (
     <>
-    <div >
-    <Navbar toggleSideBar={toggleSideBar}/>
-    </div>
-   <div>
-     <Sidenav toggle={toggle}/>
-   </div>
-   </>
-  )
+      <div className={toggle ? styles.grid : ""}>
+        <section>
+          <Sidenav toggle={toggle} />
+        </section>
+        <section>
+          <Navbar toggleSideBar={toggleSideBar} />
+        </section>
+      </div>
+    </>
+  );
 }
 
-export default Home
+export default Home;

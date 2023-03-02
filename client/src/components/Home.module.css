@@ -1,0 +1,12 @@
+.grid {
+  display: flex;
+  width: 100%;
+}
+
+.grid section:nth-child(2n) {
+  width: 85%;
+}
+
+.grid section:nth-child(2n + 1) {
+  width: 15%;
+}
