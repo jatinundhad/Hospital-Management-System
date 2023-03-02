@@ -79,7 +79,6 @@ function LoginForm() {
     // const canvas = sigCanvas.current.getTrimmedCanvas();
     // const dataURL = canvas.toDataURL();
   };
-
   return (
     <>
       <div className={styles.container}>
